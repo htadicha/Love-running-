@@ -1,3 +1,10 @@
+/* Asteriks wildcard selector to override default styles added by the brouser */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* header styling */
 header {
 background-color: lightcoral;
