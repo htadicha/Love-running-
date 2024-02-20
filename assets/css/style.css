@@ -51,7 +51,7 @@ h1{
 .active{
         border-bottom: 1px solid #3a3a3a;
     }
-    
+
 /* Navbar with dropdown toggle */
 nav{
     position: absolute;
@@ -82,4 +82,26 @@ main {
 /* footer styling */
 footer {
 background-color: orange;
+}
+
+@media screen  and (min-width: 768px) {
+    /* we make sure that the navbar is always displayed */
+    /* header */
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    /* we have to display the menu ID to be in arrow */
+    #menu{
+        display: flex;
+    }
+    #menu > li{
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
 }
