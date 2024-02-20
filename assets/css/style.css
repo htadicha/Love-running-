@@ -115,3 +115,11 @@ background-color: orange;
         margin-top: 90px;
     }
 }
+/* larger devices(laptop and desktopa, 992px and up) */
+/* hiding the hover class of the  */
+@media screen and (min-width:992px) {
+#menu > a:hover{
+    border-bottom: 1px solid #3a3a3a;
+}
+    
+}
