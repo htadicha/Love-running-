@@ -80,10 +80,18 @@ main {
     margin-top: 47px;
 }
 /* footer styling */
-footer {
-background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 47px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
-
+#social-networks{
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 @media screen  and (min-width: 768px) {
     /* we make sure that the navbar is always displayed */
     /* header */
