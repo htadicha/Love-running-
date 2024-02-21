@@ -16,6 +16,14 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+/* styles for H1 */
+h1,h3{
+    font-family: 'Oswald' sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* since we don't have alot of content we can use flexbox to push footer down to the bottom*/
 /* header styling */
 header {
@@ -32,13 +40,6 @@ align-items: baseline;
 header a{
     text-decoration: none;
     color: inherit;
-}
-
-h1{
-    font-family: 'Oswald' sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 #menu {
     font-size: 110%;
@@ -84,6 +85,23 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image\ \(1\).webp") no-repeat center center/cover;
+    position: relative;
+}
+/* cover_text alignment */
+/* final RGBA value set the opacity so it is semitransparent */
+#cover-text{
+    background-color: rgba(241,109,107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+/* we can also style the text for h1 and h3  for the cover text*/
+#cover-text > h2, #cover-text h3 {
+color: #ffffff;
 }
 /* footer styling */
 #social-networks {
@@ -127,6 +145,10 @@ main {
     main{
         /* push main content down to accomdate larger header */
         margin-top: 90px;
+    }
+    #cover-text{
+        width: 300px;
+        right: 50px;
     }
 }
 /* larger devices(laptop and desktopa, 992px and up) */
