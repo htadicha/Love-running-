@@ -75,9 +75,15 @@ nav{
 }
 /* main content styling */
 main {
-    background-color: lightblue;
+    /* make main alement to take up any surplus space to push the footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+/* hero section */
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image\ \(1\).webp") no-repeat center center/cover;
 }
 /* footer styling */
 #social-networks {
