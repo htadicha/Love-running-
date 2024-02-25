@@ -196,6 +196,20 @@ hr {
     color: #fafafa;
 }
 
+/* styling the gallery page */
+
+#photos img{
+    width: 100%;
+    line-height: 1em;
+
+
+}
+#photos{
+    
+    line-height: 0;
+    /* this affects the altes text so to fix this we need to fix this by going back to the photos img style above and add
+    line height of 1em */
+}
 /* footer styling */
 #social-networks {
     text-align: center;
