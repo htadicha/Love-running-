@@ -100,14 +100,14 @@ main {
     padding-left: 10px;
 }
 /* we can also style the text for h1 and h3  for the cover text*/
-#cover-text > h2, #cover-text h3 {
+#cover-text > h2, #cover-text>h3 {
 color: #ffffff;
 }
-#reasons{
-    margin: 20px auto;
+#reasons {
     width: 90%;
-    
+    margin: 20px auto;  
 }
+
 #reasons h2 {
 margin-bottom: 20px;
 text-align: center;
@@ -199,7 +199,8 @@ width: 100%;
     #benefits-mental > div{
         width: 75%;
     }
-    #benefits-physical > div{
+    
+    #benefits-Mental > div{
         text-align: end;
         align-self: flex-end;
     }
@@ -213,7 +214,7 @@ width: 100%;
 }
     
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     /* reasons sections */
     #benefits{
         display: flex;
@@ -222,18 +223,18 @@ width: 100%;
     #benefits > div {
         flex: 1;
     }
-    #benefits-image{
+    #benefits-image {
         order: 0
     
     }
-    #benefits-mental{
+    #benefits-mental {
         order: 1;
     }
-    #benefits-mental > div{
+    #benefits-mental > div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div{
+    #benefits-physical > div {
         align-self: flex-end;
     }
 }
