@@ -224,6 +224,14 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
+/* we will add a media query for a smaller screen(576px and up) and build up from there  
+since this is a small screen size we can build it above all the other media queries*/
+@media screen and (min-width: 576px){
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -284,14 +292,22 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+    /* gallery */
+    #photos{
+        column-count: 3;
+    }
 
 }
 
-/* larger devices(laptop and desktopa, 992px and up) */
+/* larger devices(laptop and desktops, 992px and up) */
 /* hiding the hover class of the  */
 @media screen and (min-width:992px) {
     #menu>a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+    /* gallery for laptop and desktops */
+    #photos{
+        column-count: 4;
     }
 
 }
