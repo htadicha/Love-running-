@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* general styling */
 body {
     min-height: 100vh;
@@ -16,48 +17,56 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+
 /* styles for H1 */
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'Oswald' sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
-.hidden-heading{
+
+.hidden-heading {
     display: none;
 }
 
 /* since we don't have alot of content we can use flexbox to push footer down to the bottom*/
 /* header styling */
 header {
-background-color: #ffffff;
-padding: 0 1rem;
-position: fixed;
-z-index: 99;
-width: 100%;
-box-shadow: 0 2px  2px #3a3a3a;
-display: flex;
-justify-content: space-between;
-align-items: baseline;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: inherit;
 }
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-    }
-#menu > li{
-        margin-bottom: 1em;
-    }
-.active{
-        border-bottom: 1px solid #3a3a3a;
-    }
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* Navbar with dropdown toggle */
-nav{
+nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -67,33 +76,39 @@ nav{
     display: none;
     top: 100%;
 }
+
 /* we need to include the tilde to make sure that the nav element is dispalyed when drop down is selected*/
-#nav-toggle:checked~nav{
+#nav-toggle:checked~nav {
     display: block;
 }
-#nav-toggle{
+
+#nav-toggle {
     display: none;
 }
-.nav-toggle-label{
+
+.nav-toggle-label {
     font-size: 2rem;
 }
+
 /* main content styling */
 main {
     /* make main alement to take up any surplus space to push the footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /* hero section */
-#hero{
+#hero {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image\ \(1\).webp") no-repeat center center/cover;
     position: relative;
 }
+
 /* cover_text alignment */
 /* final RGBA value set the opacity so it is semitransparent */
-#cover-text{
-    background-color: rgba(241,109,107, .7);
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -102,55 +117,65 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
+
 /* we can also style the text for h1 and h3  for the cover text*/
-#cover-text > h2, #cover-text>h3 {
-color: #ffffff;
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
 }
+
 #reasons {
     width: 90%;
-    margin: 20px auto;  
+    margin: 20px auto;
 }
 
 #reasons h2 {
-margin-bottom: 20px;
-text-align: center;
-font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
 }
+
 #benefits-physical>div,
 #benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
+
 #benefits p {
     padding: 0 20px;
 }
+
 hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
-#circle-cover-bg{
-background: url('../images/reasons-image.webp') no-repeat top center / cover;
-height: 90vw;
-width: 90vw;
-margin-bottom: 20px;
-/* mskes the square into a circle */
-border-radius: 50%;
-/* this will ensure the image stays equals to 30 pxs */
-max-width: 300px;
-max-height: 300px;
+
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* mskes the square into a circle */
+    border-radius: 50%;
+    /* this will ensure the image stays equals to 30 pxs */
+    max-width: 300px;
+    max-height: 300px;
 }
-#benefits-mage{
+
+#benefits-mage {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* adding background to the meet-up times */
-#times{
+#times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* handle responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -163,12 +188,14 @@ max-height: 300px;
     /* creates a grid of meetup times divs over the background image */
     border: 2px solid white;
 
-    
+
 }
+
 #times h3 {
     /* override the heading colour set in general styles */
     color: #fafafa;
 }
+
 /* footer styling */
 #social-networks {
     text-align: center;
@@ -177,93 +204,109 @@ max-height: 300px;
     justify-content: space-evenly;
     list-style-type: none;
 }
-#social-networks{
+
+#social-networks {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
 
-@media screen  and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
     /* we make sure that the navbar is always displayed */
     /* header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
     }
+
     /* we have to display the menu ID to be in arrow */
-    #menu{
+    #menu {
         display: flex;
     }
-    #menu > li{
+
+    #menu>li {
         padding-left: 1rem;
     }
-    .nav-toggle-label{
+
+    .nav-toggle-label {
         display: none;
     }
-    #logo{
+
+    #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     /* main content */
-    main{
+    main {
         /* push main content down to accomdate larger header */
         margin-top: 90px;
     }
+
     /* Hero */
-    #cover-text{
+    #cover-text {
         width: 300px;
         right: 50px;
     }
+
     #benefits-physical,
     #benefits-mental {
-display: flex;
-flex-direction: column;
-width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    #benefits-physical > div,
-    #benefits-mental > div{
+
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
-    
-    #benefits-Mental > div{
+
+    #benefits-Mental>div {
         text-align: end;
         align-self: flex-end;
     }
 
 }
+
 /* larger devices(laptop and desktopa, 992px and up) */
 /* hiding the hover class of the  */
 @media screen and (min-width:992px) {
-#menu > a:hover{
-    border-bottom: 1px solid #3a3a3a;
+    #menu>a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
 }
-    
-}
+
 @media screen and (min-width: 1200px) {
+
     /* reasons sections */
-    #benefits{
+    #benefits {
         display: flex;
         flex-direction: row;
     }
-    #benefits > div {
+
+    #benefits>div {
         flex: 1;
     }
+
     #benefits-image {
         order: 0
-    
     }
+
     #benefits-mental {
         order: 1;
     }
-    #benefits-mental > div {
+
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
