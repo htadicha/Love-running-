@@ -23,6 +23,9 @@ h1,h2,h3{
     letter-spacing: 2px;
     color: #252525;
 }
+.hidden-heading{
+    display: none;
+}
 
 /* since we don't have alot of content we can use flexbox to push footer down to the bottom*/
 /* header styling */
