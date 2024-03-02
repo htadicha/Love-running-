@@ -245,6 +245,29 @@ hr {
     color: #fafafa;
     margin-bottom: 20px;
 }
+.text-input{
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+.radio-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.join-button{
+    margin-top:  20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
 /* we will add a media query for a smaller screen(576px and up) and build up from there  
 since this is a small screen size we can build it above all the other media queries*/
 @media screen and (min-width: 576px){
