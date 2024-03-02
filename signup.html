@@ -29,21 +29,60 @@
         <nav>
             <ul id="menu">
                 <lI><a href="index.html">Home</a></lI>
-                <lI><a href="gallery.html" >Gallery</a></lI>
+                <lI><a href="gallery.html">Gallery</a></lI>
                 <lI><a href="signup.html" class="active">Sign up</a></lI>
             </ul>
         </nav>
     </header>
     <!-- Main content -->
-    <main>Main content</main>
+    <main>
+        <section id="signup">
+            <form action="https://formdump.codeinstitute.net" method="POST" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed UP</h2>
+                <label for="first_name"> First Name</label>
+                <input name="first_name" id="first_name" type="text" required><br>
+                <label for="last_name">Last Name</label>
+                <input name="last_name" id="last_name" type="text" required><br>
+                <label for="email_address">Email Address</label>
+                <input name="email_address" id="email_address" type="text" required><br>
+            </form>
+            <div class="radio_buttons">
+                <div>
+                    <label for="road">Road</label>
+                    <input type="radio" name="running_preference" id="road" value="road" required>
+                </div>
+                <div>
+                    <label for="trail"> Trail</label>
+                    <input type="radio" value="trail" name="running_preference" id="trail" required>
+                </div>
+                <div>
+                    <label for="both">Both</label>
+                    <input type="radio" id="both" name="running_preference" value="both" required>
+                </div>
+                <div>
+                    <input value="Let's Run" type="submit" class="joint-button">
+                </div>
+            </div>
+            
+
+        </section>
+    </main>
     <!-- Footer -->
     <footer>
         <ul id="social-networks">
-            <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
-            
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+
         </ul>
     </footer>
 
