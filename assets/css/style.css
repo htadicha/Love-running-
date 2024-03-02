@@ -276,7 +276,7 @@ since this is a small screen size we can build it above all the other media quer
         column-gap: 0;
     }
 }
-
+/* media for 768 screens and Up */
 @media screen and (min-width: 768px) {
 
     /* we make sure that the navbar is always displayed */
@@ -339,6 +339,25 @@ since this is a small screen size we can build it above all the other media quer
     /* gallery */
     #photos{
         column-count: 3;
+    }
+    /* form */
+    #signup{
+        background-position: center;
+        position: relative;
+    }
+    #signup-form{
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top:150px;
+    }
+    .text-input:hover{
+        border-color: #f16c6b;
+
+    }
+    .join-button:hover{
+        background-color: #fafafa;
+        color: #454b1b;
     }
 
 }
