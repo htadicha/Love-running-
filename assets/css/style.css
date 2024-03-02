@@ -95,6 +95,8 @@ main {
     /* make main alement to take up any surplus space to push the footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* hero section */
@@ -223,6 +225,25 @@ hr {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* form */
+#signup{
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;  
+}
+#signup-form{
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+    
+}
+#signup-form > h2{
+    color: #fafafa;
+    margin-bottom: 20px;
 }
 /* we will add a media query for a smaller screen(576px and up) and build up from there  
 since this is a small screen size we can build it above all the other media queries*/
